@@ -1,0 +1,48 @@
+@import url("./fonts/ballantines/stylesheet.css");
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-9');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+    .font-helvetica {
+        font-family: 'Helvetica 35 Thin', sans-serif;
+    }
+
+    .font-courrier {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    * {
+        font-family: 'Helvetica 35 Thin', sans-serif;
+    }
+
+    .grid-2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .grid-4 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+    }
+
+    .custom-img {
+        object-fit: contain;
+        width: 100% !important;
+        position: relative !important;
+        height: unset !important;
+    }
+
+    .unset-img {
+        width: 100%;
+    }
+
+    .unset-img>div {
+        position: unset !important;
+    }
+}
